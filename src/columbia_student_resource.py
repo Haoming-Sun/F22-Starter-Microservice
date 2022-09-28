@@ -13,7 +13,8 @@ class ColumbiaStudentResource:
 
         usr = os.environ.get("DBUSER")
         pw = os.environ.get("DBPW")
-        h = os.environ.get("DBHOST")
+        #h = os.environ.get("DBHOST")
+        h = "cloudcomputing0.ct1zy1aifgsb.us-east-2.rds.amazonaws.com"
 
         conn = pymysql.connect(
             user=usr,
